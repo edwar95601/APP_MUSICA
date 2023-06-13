@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Piano</title>
+    <link rel="stylesheet" href="piano2.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+  </head>
+  <body onload="my_onload()" onkeydown="handle_key(event)">
+    <div class="wrapper">
+      <header>
+        
+        <div><button onclick="play_or_stop()" id="my_play_button">Start</button></div>
+
+        <div>
+            <input id="my_bpm_input" onchange="change_bpm()" type="number" min="40" max="300" step="1" value="60" />
+            <button class="plus_minus" onclick="increment_bpm(1)">+</button>
+            <button class="plus_minus" onclick="increment_bpm(-1)">-</button>
+        </div>
+        <input id="my_volume_input" value="20" />
+        <div class="column volume-slider">
+          <span>Volume</span
+          ><input type="range" min="0" max="1" value="0.5" step="any" />
+        </div>
+        <div class="column keys-checkbox">
+          <span>Show Keys</span><input type="checkbox" checked />
+        </div>
+        <div>
+          <button class="piano2" action="http://aprenderaprogramar.com/accion.php">?</button>
+        </div>
+
+      </header>
+      <ul class="piano-keys">
+        <li class="key red" data-key="a"><span>C</span></li>
+        <li class="key brown" data-key="s"><span>D</span></li>
+        <li class="key yelow" data-key="d"><span>E</span></li>
+        <li class="key green" data-key="f"><span>F</span></li>
+        <li class="key blue" data-key="g"><span>G</span></li>
+        <li class="key aqua" data-key="h"><span>A</span></li>
+        <li class="key purple" data-key="j"><span>B</span></li>
+      </ul>
+      <ul class="piano-keys">
+        <li class="key red1" data-key="a"></li>
+        <li class="key brown1" data-key="s"></li>
+        <li class="key yelow1" data-key="d"></li>
+        <li class="key green1" data-key="f"></li>
+        <li class="key blue1" data-key="g"></li>
+        <li class="key aqua1" data-key="h"></li>
+        <li class="key purple1" data-key="j"></li>
+      </ul>
+      <ul class="piano-keys">
+        <li class="key red2" data-key="a"></li>
+        <li class="key brown2" data-key="s"></li>
+        <li class="key yelow2" data-key="d"></li>
+        <li class="key green2" data-key="f"></li>
+        <li class="key blue2" data-key="g"></li>
+        <li class="key aqua2" data-key="h"></li>
+        <li class="key purple2" data-key="j"></li>
+      </ul>
+      <ul class="piano-keys">
+        <li class="key red3" data-key="a"></li>
+        <li class="key brown3" data-key="s"></li>
+        <li class="key yelow3" data-key="d"></li>
+        <li class="key green3" data-key="f"></li>
+        <li class="key blue3" data-key="g"></li>
+        <li class="key aqua3" data-key="h"></li>
+        <li class="key purple3" data-key="j"></li>
+      </ul>
+      <ul class="piano-keys">
+        <li class="key red4" data-key="a"></li>
+        <li class="key brown4" data-key="s"></li>
+        <li class="key yelow4" data-key="d"></li>
+        <li class="key green4" data-key="f"></li>
+        <li class="key blue4" data-key="g"></li>
+        <li class="key aqua4" data-key="h"></li>
+        <li class="key purple4" data-key="j"></li>
+      </ul>
+      <ul class="piano-keys">
+        <li class="key red5" data-key="a"></li>
+        <li class="key brown5" data-key="s"></li>
+        <li class="key yelow5" data-key="d"></li>
+        <li class="key green5" data-key="f"></li>
+        <li class="key blue5" data-key="g"></li>
+        <li class="key aqua5" data-key="h"></li>
+        <li class="key purple5" data-key="j"></li>
+      </ul>
+      <ul class="piano-keys">
+        <li class="key red6" data-key="a"></li>
+        <li class="key brown6" data-key="s"></li>
+        <li class="key yelow6" data-key="d"></li>
+        <li class="key green6" data-key="f"></li>
+        <li class="key blue6" data-key="g"></li>
+        <li class="key aqua6" data-key="h"></li>
+        <li class="key purple6" data-key="j"></li>
+      </ul>
+      <ul class="piano-keys">
+        <li class="key red7" data-key="a"></li>
+        <li class="key brown7" data-key="s"></li>
+        <li class="key yelow7" data-key="d"></li>
+        <li class="key green7" data-key="f"></li>
+        <li class="key blue7" data-key="g"></li>
+        <li class="key aqua7" data-key="h"></li>
+        <li class="key purple7" data-key="j"></li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  

@@ -1,0 +1,335 @@
+
+html {
+  font-size: 62.5%;
+  background-color: #0ba8e2;
+ }
+body {
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+.playbutton {
+  width: 130px;
+  height: 50px;
+  margin-bottom: 1px;
+  font-size: 16px;
+margin-left: 10px;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: 1000px; /* Ancho total de la matriz de botones */
+  margin: 0 auto; /* Centrar la matriz de botones horizontalmente */
+}
+.button-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tempo-button {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.tempo{
+  font-size: 20px;
+  margin-left: 10px; 
+}
+.play-button {
+  width: 130px;
+  height: 50px;
+  margin-bottom: 1px;
+  font-size: 16px;
+margin-left: 10px;
+}
+
+  /* botón rojo */
+.btn-1 {
+  background-color: #ffa373;
+  /* Agrega otros estilos según tus preferencias */
+}
+.btn-2 {
+  background-color: #ff8555;
+  /* Agrega otros estilos según tus preferencias */
+} 
+.btn-3 {
+  background-color: #ff6438;
+  /* Agrega otros estilos según tus preferencias */
+}
+.btn-4 {
+  background-color: #ff3718;
+  /* Agrega otros estilos según tus preferencias */
+}
+.btn-5 {
+  background-color: #ec0203;
+  /* Agrega otros estilos según tus preferencias */
+}
+.btn-6 {
+  background-color: #c60104;
+  /* Agrega otros estilos según tus preferencias */
+}
+.btn-7 {
+  background-color: #a20104;
+  /* Agrega otros estilos según tus preferencias */
+}
+.btn-8 {
+  background-color: #7f0000;
+  /* Agrega otros estilos según tus preferencias */
+}
+
+/* Botón naranja */  
+.btn-9 {
+  background-color: #ffd281;
+  /* Agrega otros estilos según tus preferencias */
+}
+.btn-10 {
+  background-color: #f2b262;
+  /* Agrega otros estilos según tus preferencias */
+} 
+.btn-11 {
+  background-color: #e39244;
+  /* Agrega otros estilos según tus preferencias */
+}
+.btn-12 {
+  background-color: #d37224;
+  /* Agrega otros estilos según tus preferencias */
+}
+.btn-13 {
+  background-color: #b95511;
+  /* Agrega otros estilos según tus preferencias */
+}
+.btn-14 {
+  background-color: #973a0e;
+  /* Agrega otros estilos según tus preferencias */
+}
+.btn-15 {
+  background-color: #77200a;
+  /* Agrega otros estilos según tus preferencias */
+}
+.btn-16 {
+  background-color: #580000;
+  /* Agrega otros estilos según tus preferencias */
+}
+
+    /* Botón amarillo */  
+    .btn-17 {
+      background-color: #ffffa5;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-18 {
+      background-color: #fef986;
+      /* Agrega otros estilos según tus preferencias */
+    } 
+    .btn-19 {
+      background-color: #fcf264;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-20 {
+      background-color: #f9ec3c;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-21 {
+      background-color: #e5d919;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-22 {
+      background-color: #c2ba10;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-23 {
+      background-color: #a19c07;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-24 {
+      background-color: #807f00;
+      /* Agrega otros estilos según tus preferencias */
+
+    }
+    /* Botón verde */  
+    .btn-25 {
+      background-color: #ffff8b;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-26 {
+      background-color: #deea6b;
+      /* Agrega otros estilos según tus preferencias */
+    } 
+    .btn-27 {
+      background-color: #bed54a;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-28 {
+      background-color: #9dc023;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-29 {
+      background-color: #7da700;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-30 {
+      background-color: #5f8900;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-31 {
+      background-color: #426c00;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-32 {
+      background-color: #255000;
+      /* Agrega otros estilos según tus preferencias */
+    }
+
+
+    /* Botón azul agua marina */  
+    .btn-33 {
+      background-color: #b6ffff;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-34 {
+      background-color: #96eafc;
+      /* Agrega otros estilos según tus preferencias */
+    } 
+    .btn-35 {
+      background-color: #72d5f8;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-36 {
+      background-color: #41c1f4;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-37 {
+      background-color: #0ba8e2;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-38 {
+      background-color: #088ac2;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-39 {
+      background-color: #046da3;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-40 {
+      background-color: #005285;
+      /* Agrega otros estilos según tus preferencias */
+    }
+
+    /* Botón azul*/  
+    .btn-41 {
+      background-color: #96b3ff;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-42 {
+      background-color: #7594e3;
+      /* Agrega otros estilos según tus preferencias */
+    } 
+    .btn-43 {
+      background-color: #5275c8;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-44 {
+      background-color: #2859ad;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-45 {
+      background-color: #004091;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-46 {
+      background-color: #002c74;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-47 {
+      background-color: #001958;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-48 {
+      background-color: #00003d;
+      /* Agrega otros estilos según tus preferencias */
+    }
+
+        /* Botón azul*/  
+    .btn-41 {
+      background-color: #96b3ff;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-42 {
+      background-color: #7594e3;
+      /* Agrega otros estilos según tus preferencias */
+    } 
+    .btn-43 {
+      background-color: #5275c8;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-44 {
+      background-color: #2859ad;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-45 {
+      background-color: #004091;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-46 {
+      background-color: #002c74;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-47 {
+      background-color: #001958;
+      /* Agrega otros estilos según tus preferencias */
+    }
+    .btn-48 {
+      background-color: #00003d;
+      /* Agrega otros estilos según tus preferencias */
+    }
+  
+      /* Botón morado*/  
+      .btn-49 {
+        background-color: #f291f3;
+        /* Agrega otros estilos según tus preferencias */
+      }
+      .btn-50 {
+        background-color: #d071d1;
+        /* Agrega otros estilos según tus preferencias */
+      } 
+      .btn-51 {
+        background-color: #ae52b0;
+        /* Agrega otros estilos según tus preferencias */
+      }
+      .btn-52 {
+        background-color: #8d3290;
+        /* Agrega otros estilos según tus preferencias */
+      }
+      .btn-53 {
+        background-color: #6f1c73;
+        /* Agrega otros estilos según tus preferencias */
+      }
+      .btn-54 {
+        background-color: #551257;
+        /* Agrega otros estilos según tus preferencias */
+      }
+      .btn-55 {
+        background-color: #3d093c;
+        /* Agrega otros estilos según tus preferencias */
+      }
+      .btn-56 {
+        background-color: #260024;
+        /* Agrega otros estilos según tus preferencias */
+      }
+
+/* Agrega más clases de colores según tus necesidades */
+.play-button.active {
+  transform: scale(1.1); /* Ejemplo de escala cuando se activa el botón */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ejemplo de sombra cuando se activa el botón */
+  width: 132px;
+  height: 50px;
+  margin-bottom: 10px;
+} 

@@ -1,0 +1,1063 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #e3f2fd;
+}
+
+.wrapper {
+  padding: 35px 40px;
+  border-radius: 20px;
+  background: #141414;
+}
+
+.wrapper header {
+  display: flex;
+  color: #b2b2b2;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h2 {
+  font-size: 1.6rem;
+}
+
+header .column {
+  display: flex;
+  align-items: center;
+}
+
+header span {
+  font-weight: 500;
+  margin-right: 15px;
+  font-size: 1.19rem;
+}
+
+header input {
+  outline: none;
+  border-radius: 30px;
+}
+
+.volume-slider input {
+  accent-color: #fff;
+}
+
+.keys-checkbox input {
+  height: 30px;
+  width: 60px;
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+  background: #4b4b4b;
+}
+.piano2{
+  font-size: 20px;
+  font-weight: bold;
+  width: 40px;
+  padding: 0;
+}
+.keys-checkbox input::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #8c8c8c;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.keys-checkbox input:checked::before {
+  left: 35px;
+  background: #fff;
+}
+
+.piano-keys {
+  display: flex;
+  list-style: none;
+  margin-top: 1px;
+}
+
+.piano-keys .key {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.piano-keys .red {
+  list-style-type: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+margin-right: 3px;
+  margin-top: 3%;
+  border: 0px solid #000;
+  background: linear-gradient(#ff0000 96%, #ff0101 4%);
+}
+
+.piano-keys .red.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #ff2e2e 0%, #eee 100%);
+}
+
+.piano-keys .brown {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  margin-top: 3%;
+  border: 0px solid #000;
+  background: linear-gradient(#ffae00 96%, #ddb5039c 4%);
+}
+
+.piano-keys .brown.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #c49104 0%, #eee 100%);
+}
+
+.piano-keys .yelow {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  margin-top: 3%;
+  border: 0px solid #000;
+  background: linear-gradient(#fffb00 96%, #fbff00af 4%);
+}
+
+.piano-keys .yelow.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fbff11 0%, #eee 100%);
+}
+
+.piano-keys .green {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  margin-top: 3%;
+  border: 0px solid #000;
+  background: linear-gradient(#48ff00 96%, #33e407bd 4%);
+}
+
+.piano-keys .green.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #09f015 0%, #eee 100%);
+}
+.piano-keys .key span {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  color: #a2a2a2;
+  font-size: 1.13rem;
+  text-align: center;
+}
+
+.piano-keys .blue {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  margin-top: 3%;
+  border: 0px solid #000;
+  background: linear-gradient(#00c3ff 96%, #14b2fccc 4%);
+}
+
+.piano-keys .blue.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #18d6f7 0%, #eee 100%);
+}
+
+.piano-keys .aqua {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  margin-top: 3%;
+  border: 0px solid #000;
+  background: linear-gradient(#2e54fc 96%, #6933ffa6 4%);
+}
+
+.piano-keys .aqua.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #460aeb 0%, #eee 100%);
+}
+
+.piano-keys .purple {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-left: 2px;
+  margin-top: 3%;
+  border: 0px solid #000;
+  background: linear-gradient(#ff00ff 96%, #f702d6a2 4%);
+}
+
+.piano-keys .purple.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fa31be 0%, #eee 100%);
+  
+}
+
+
+
+.piano-keys .red1 {
+  list-style-type: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#ff0000 96%, #b30000 4%);
+}
+
+.piano-keys .red1.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #ff2e2e 0%, #eee 100%);
+}
+
+.piano-keys .brown1 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#c28f03 96%, #ddb5039c 4%);
+}
+
+.piano-keys .brown1.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #c49104 0%, #eee 100%);
+}
+
+.piano-keys .yelow1 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#c7ca0d 96%, #f1f509af 4%);
+}
+
+.piano-keys .yelow1.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fbff11 0%, #eee 100%);
+}
+
+.piano-keys .green1 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#02fa2c 96%, #33e407bd 4%);
+}
+
+.piano-keys .green1.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #09f015 0%, #eee 100%);
+}
+
+.piano-keys .blue1 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#02b9f1 96%, #0daaf3cc 4%);
+}
+
+.piano-keys .blue1.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #18d6f7 0%, #eee 100%);
+}
+
+.piano-keys .aqua1 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#0212f1 96%, #4408e9a6 4%);
+}
+
+.piano-keys .aqua1.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #460aeb 0%, #eee 100%);
+}
+
+.piano-keys .purple1 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-left: 2px;
+  border: 0px solid #000;
+  background: linear-gradient(#BB8FCE 96%, #d48fcba2 4%);
+}
+
+.piano-keys .purple1.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fa31be 0%, #eee 100%);
+  
+}
+
+
+.piano-keys .red2 {
+  list-style-type: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#EC7063  96%, #b90303 4%);
+}
+
+.piano-keys .red2.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #ff2e2e 0%, #eee 100%);
+}
+
+.piano-keys .brown2 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#F5B041  96%, #ddb5039c 4%);
+}
+
+.piano-keys .brown2.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #c49104 0%, #eee 100%);
+}
+
+.piano-keys .yelow2 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#F4D03F 96%, #f1f509af 4%);
+}
+
+.piano-keys .yelow2.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fbff11 0%, #eee 100%);
+}
+
+.piano-keys .green2 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#58D68D 96%, #33e407bd 4%);
+}
+
+.piano-keys .green2.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #09f015 0%, #eee 100%);
+}
+
+.piano-keys .blue2 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#5DADE2  96%, #0daaf3cc 4%);
+}
+
+.piano-keys .blue2.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #18d6f7 0%, #eee 100%);
+}
+
+.piano-keys .aqua2 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#0212f1 96%, #4408e9a6 4%);
+}
+
+.piano-keys .aqua2.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #460aeb 0%, #eee 100%);
+}
+
+.piano-keys .purple2 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-left: 2px;
+  border: 0px solid #000;
+  background: linear-gradient(#AF7AC5 96%, #fa14dba2 4%);
+}
+
+.piano-keys .purple2.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fa31be 0%, #eee 100%);
+  
+}
+
+
+
+.piano-keys .red3 {
+  list-style-type: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#E74C3C  96%, #b90303 4%);
+}
+
+.piano-keys .red3.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #ff2e2e 0%, #eee 100%);
+}
+
+.piano-keys .brown3 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#F39C12  96%, #ddb5039c 4%);
+}
+
+.piano-keys .brown3.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #c49104 0%, #eee 100%);
+}
+
+.piano-keys .yelow3 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#F1C40F 96%, #f1f509af 4%);
+}
+
+.piano-keys .yelow3.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fbff11 0%, #eee 100%);
+}
+
+.piano-keys .green3 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#2ECC71 96%, #a5f392bd 4%);
+}
+
+.piano-keys .green3.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #09f015 0%, #eee 100%);
+}
+
+.piano-keys .blue3 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#45a7e7 96%, #a2dcf7cc 4%);
+}
+
+.piano-keys .blue3.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #18d6f7 0%, #eee 100%);
+}
+
+.piano-keys .aqua3 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#2432fd 96%, #b1a0f5d2 4%);
+}
+
+.piano-keys .aqua3.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #460aeb 0%, #eee 100%);
+}
+
+.piano-keys .purple3 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-left: 2px;
+  border: 0px solid #000;
+  background: linear-gradient(#8E44AD 96%, #fa14dba2 4%);
+}
+
+.piano-keys .purple3.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fa31be 0%, #eee 100%);
+  
+}
+
+
+.piano-keys .red4 {
+  list-style-type: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#CB4335 96%, #f5a8a8 4%);
+}
+
+.piano-keys .red4.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #ff2e2e 0%, #eee 100%);
+}
+
+.piano-keys .brown4 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#D68910 96%, #eee2ac9c 4%);
+}
+
+.piano-keys .brown4.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #c49104 0%, #eee 100%);
+}
+
+.piano-keys .yelow4 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#D4AC0D 96%, #e2e488af 4%);
+}
+
+.piano-keys .yelow4.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fbff11 0%, #eee 100%);
+}
+
+.piano-keys .green4 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#28B463   96%, #bce7b1bd 4%);
+}
+
+.piano-keys .green4.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #09f015 0%, #eee 100%);
+}
+
+.piano-keys .blue4 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#2E86C1 96%, #83c7e7cc 4%);
+}
+
+.piano-keys .blue4.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #18d6f7 0%, #eee 100%);
+}
+
+.piano-keys .aqua4 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#303ce2 96%, #9374eba6 4%);
+}
+
+.piano-keys .aqua4.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #460aeb 0%, #eee 100%);
+}
+
+.piano-keys .purple4 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-left: 2px;
+  border: 0px solid #000;
+  background: linear-gradient(#884EA0 96%, #e98ae9a2 4%);
+}
+
+.piano-keys .purple4.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fa31be 0%, #eee 100%);
+  
+}
+
+
+
+.piano-keys .red5 {
+  list-style-type: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#922B21 96%, #9e0101 4%);
+}
+
+.piano-keys .red5.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #ff2e2e 0%, #eee 100%);
+}
+
+.piano-keys .brown5 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#B9770E  96%, #ad8e019c 4%);
+}
+
+.piano-keys .brown5.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #c49104 0%, #eee 100%);
+}
+
+.piano-keys .yelow5 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#B7950B 96%, #818301af 4%);
+}
+
+.piano-keys .yelow5.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #fbff11 0%, #eee 100%);
+}
+
+.piano-keys .green5 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#1E8449 96%, #209b02bd 4%);
+}
+
+.piano-keys .green5.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #09f015 0%, #eee 100%);
+}
+
+.piano-keys .blue5 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#2874A6  96%, #0173a8cc 4%);
+}
+
+.piano-keys .blue5.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #18d6f7 0%, #eee 100%);
+}
+
+.piano-keys .aqua5 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#020b88 96%, #2a0297a6 4%);
+}
+
+.piano-keys .aqua5.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #460aeb 0%, #eee 100%);
+}
+
+.piano-keys .purple5 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-left: 2px;
+  border: 0px solid #000;
+  background: linear-gradient(#6C3483  96%, #a80192a2 4%);
+}
+
+.piano-keys .purple5.active {
+  box-shadow: inset -5px 5px 20px rgba(211, 80, 80, 0.2);
+  background: linear-gradient(to bottom, #ad047a 0%, #eee 100%);
+  
+}
+
+
+.piano-keys .red6 {
+  list-style-type: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#7B241C 96%, #6d0202 4%);
+}
+
+.piano-keys .red6.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #830303 0%, #eee 100%);
+}
+
+.piano-keys .brown6 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#9C640C 96%, #aa8b009c 4%);
+}
+
+.piano-keys .brown6.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #a17701 0%, #eee 100%);
+}
+
+.piano-keys .yelow6 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#9A7D0A 96%, #969900af 4%);
+}
+
+.piano-keys .yelow6.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #9a9c02 0%, #eee 100%);
+}
+
+.piano-keys .green6 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#196F3D 96%, #25b800bd 4%);
+}
+
+.piano-keys .green6.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #029b0a 0%, #eee 100%);
+}
+
+.piano-keys .blue6 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#21618C 96%, #0071a5cc 4%);
+}
+
+.piano-keys .blue6.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #027a8f 0%, #eee 100%);
+}
+
+.piano-keys .aqua6 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#00098b 96%, #2d00aaa6 4%);
+}
+
+.piano-keys .aqua6.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #290197 0%, #eee 100%);
+}
+
+.piano-keys .purple6 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-left: 2px;
+  border: 0px solid #000;
+  background: linear-gradient(#5B2C6F 96%, #a80092a2 4%);
+}
+
+.piano-keys .purple6.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #a00070 0%, #eee 100%);
+  
+}
+
+
+
+.piano-keys .red7 {
+  list-style-type: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#641E16 96%, #6b0101 4%);
+}
+
+.piano-keys .red7.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #b10303 0%, #eee 100%);
+}
+
+.piano-keys .brown7 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient( #7E5109 96%, #b392009c 4%);
+}
+
+.piano-keys .brown7.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #926b00 0%, #eee 100%);
+}
+
+.piano-keys .yelow7 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#7D6608  96%, #898b02af 4%);
+}
+
+.piano-keys .yelow7.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #9fa102 0%, #eee 100%);
+}
+
+.piano-keys .green7 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#145A32 96%, #1f9402bd 4%);
+}
+
+.piano-keys .green7.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #09f015 0%, #eee 100%);
+}
+
+.piano-keys .blue7 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient( #1B4F72 96%, #006c9ecc 4%);
+}
+
+.piano-keys .blue7.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #00758a 0%, #eee 100%);
+}
+
+.piano-keys .aqua7 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-right: 3px;
+  border: 0px solid #000;
+  background: linear-gradient(#030c8d 96%, #4408e9a6 4%);
+}
+
+.piano-keys .aqua7.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #23037e 0%, #eee 100%);
+}
+
+.piano-keys .purple7 {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  margin-left: 2px;
+  border: 0px solid #000;
+  background: linear-gradient(#4A235A 96%, #a70391a2 4%);
+}
+
+.piano-keys .purple7.active {
+  box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #a00571 0%, #eee 100%);
+  
+}
+
+.piano-keys .key.hide span {
+  display: none;
+}
+
+.piano-keys .black span {
+  bottom: 13px;
+  color: #f5f2f2;
+}
+.piano-keys .red span {
+  bottom: 13px;
+  color: #f5f2f2;
+}
+.piano-keys .brown span {
+  bottom: 13px;
+  color: #f5f2f2;
+}
+.piano-keys .yelow span {
+  bottom: 13px;
+  color: #f5f2f2;
+}
+.piano-keys .green span {
+  bottom: 13px;
+  color: #f5f2f2;
+}
+.piano-keys .blue span {
+  bottom: 13px;
+  color: #f5f2f2;
+}
+.piano-keys .blue2 span {
+  bottom: 13px;
+  color: #f5f2f2;
+}
+.piano-keys .purple span {
+  bottom: 13px;
+  color: #f5f2f2;
+}
+
+@media screen and (max-width: 815px) {
+  .wrapper {
+    padding: 25px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  header :where(h2, .column) {
+    margin-bottom: 13px;
+  }
+
+  .volume-slider input {
+    max-width: 100px;
+  }
+
+  .piano-keys {
+    margin-top: 20px;
+  }
+
+  .piano-keys .key:where(:nth-child(9), :nth-child(10)) {
+    display: none;
+  }
+
+  .piano-keys .black {
+    height: 100px;
+    width: 40px;
+    margin: 0 -20px 0 -20px;
+  }
+
+  .piano-keys .white {
+    height: 180px;
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .piano-keys .key:nth-child(13),
+  .piano-keys .key:nth-child(14),
+  .piano-keys .key:nth-child(15),
+  .piano-keys .key:nth-child(16),
+  .piano-keys .key :nth-child(17) {
+    display: none;
+  }
+  
+  .piano-keys .white {
+    width: 50px;
+  }
+}
+
+
+
+#my_bpm_input {
+  background-color: yellow;
+  font-size: 20px;
+  text-align: center;
+  width: 60px;
+  border-radius: 1px;
+}
+
+#my_play_button {
+  background-color: lightgreen;
+  text-align: center;
+  width: 60px;
+  font-size: 20px;
+}
+
+#my_volume_input {
+  font-size: 0px;
+  width: 0px;
+  background-color: #141414;
+}
+
+.increment {
+  font-size: 16px;
+  width: 70px;
+  height: 40px;
+  padding: 0;
+  white-space: nowrap;
+}
+
+#my_tap_pad {
+  width: 200px;
+  height: 200px;
+  background-color: lightgray;
+  border: 1px solid gray;
+}
+
+.plus_minus {
+  font-size: 20px;
+  font-weight: bold;
+  width: 40px;
+  padding: 0;
+}
+
+
+h1 {
+  font-weight: normal;
+  font-size: 20px;
+}
